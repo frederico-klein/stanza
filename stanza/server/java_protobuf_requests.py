@@ -30,7 +30,7 @@ def add_token(token_list, word, token):
         query_token.coarseTag = word.upos
     if token.ner is not None:
         query_token.ner = token.ner
-    
+
 def add_word_to_graph(graph, word, sent_idx, word_idx):
     """
     Add a node and possibly an edge for a word in a basic dependency graph.
